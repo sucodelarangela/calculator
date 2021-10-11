@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - #2 - Calculadora</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+    <title>
+        Imersão Dev - Aula 02
+    </title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            CALCULADORA
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-calculadora.svg" class="page-logo"
+            alt="">
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+  
+  <section>
+    <div class="visor">
+      <h2 id="visor"></h2>
+      <h3 id="parcial"></h3>
+    </div>
+<!--   Os botões do teclado serão organizados em uma tabela   -->
+    <div class="botoes">
+      <table style="width:100%" align="center">
+        <tr>
+          <td><img width="60px" src="https://cdn-icons-png.flaticon.com/512/2106/2106578.png"></td>
+          <td></td>
+          <td><button id="c" onclick="limpaTela()">C</button></td>
+          <td><button id="delete" onclick="backspace()">←</button></td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+<!--      Cada tecla da calculadora já tem uma declaração JavaScript para colocar cada número (ou símbolo) diretamente na Id correspondente usando o document.getElementById(). Para evitar que cada elemento substitua o que já está lá, usamos "+=", ou seja, o elemento existente é mantido e o novo elemento entra logo depois      -->
+          <td><button id="sete" onclick="javascript:(document.getElementById('visor')).innerHTML += 7">7</button></td>
+          <td><button id="oito" onclick="javascript:(document.getElementById('visor')).innerHTML += 8">8</button></td>
+          <td><button id="nove" onclick="javascript:(document.getElementById('visor')).innerHTML += 9">9</button></td>
+          <td><button id="divisao" onclick="javascript:(document.getElementById('visor')).innerHTML += ' ÷ '; divide()">÷</button></td>
+<!--      No caso das operações, além de colocar o símbolo do operador na tela, também chama a função específica de cada operação      -->
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr>
+          <td><button id="quatro" onclick="javascript:(document.getElementById('visor')).innerHTML += 4">4</button></td>
+          <td><button id="cinco" onclick="javascript:(document.getElementById('visor')).innerHTML += 5">5</button></td>
+          <td><button id="seis" onclick="javascript:(document.getElementById('visor')).innerHTML += 6">6</button></td>
+          <td><button id="vezes" onclick="javascript:(document.getElementById('visor')).innerHTML += ' x '; multiplica()">x</button></td>
+        <tr></tr>
+        <tr></tr>
+        <td><button id="um" onclick="javascript:(document.getElementById('visor')).innerHTML += 1">1</button></td>
+          <td><button id="dois" onclick="javascript:(document.getElementById('visor')).innerHTML += 2">2</button></td>
+          <td><button id="tres" onclick="javascript:(document.getElementById('visor')).innerHTML += 3">3</button></td>
+          <td><button id="mais" onclick="javascript:(document.getElementById('visor')).innerHTML += ' + '; soma()">+</button></td>
+        <tr></tr>
+        <tr></tr>
+        <td><button id="zero" onclick="javascript:(document.getElementById('visor')).innerHTML += 0">0</button></td>
+          <td><button id="ponto" onclick="javascript:(document.getElementById('visor')).innerHTML += '.'">.</button></td>
+          <td><button id="igual" onclick="mostraResultado()">=</button></td>
+          <td><button id="menos" onclick="javascript:(document.getElementById('visor')).innerHTML += ' - '; subtrai()">-</button></td>
+      </table>
+      </section>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

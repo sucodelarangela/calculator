@@ -1,0 +1,95 @@
+body {
+    font-family: 'Orbitron',sans-serif;
+    background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-2-calculadora-certa.png');
+    background-color: #000000;
+    background-size: cover;
+  }
+  
+section {
+  align-self: flex;
+  margin: auto;
+  width: 400px;
+  margin-top: 50px;
+  background-color: #444857;
+  padding: 20px;
+  padding-top:40px;
+  border: none;
+  border-radius: 5px;
+}
+
+.container {
+  text-align: center;
+}
+  
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+  
+.page-logo {
+  width: 200px;
+}
+
+.visor {
+  height: 80px;
+  background: #002B36;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.visor h2 {
+  font-size: 30px;
+  font-style: italic;
+  color: #00ff00;
+  text-shadow: 0 0 10px;
+  letter-spacing: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50px;
+  float: right;
+  padding-right: 15px;
+}
+
+.botoes {
+  display: center;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: center;
+}
+
+.botoes button {
+  font-family: 'Orbitron',sans-serif;
+  font-size: 30px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  background-color: #000000;
+  color: #00ff00;
+}
+
+h3{
+  font-size: 15px;
+  font-style: italic;
+  color: #00ff00;
+  text-shadow: 0 0 10px;
+  letter-spacing: 5px;
+  position: absolute;
+  vertical-align: middle;
+  line-height: 2px;
+  float: left;
+  padding-left: 15px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right:10px;
+}
+
+/* https://i.ytimg.com/vi/jovpuyq-n3E/maxresdefault.jpg */
